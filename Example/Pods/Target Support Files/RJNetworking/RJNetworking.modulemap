@@ -1,0 +1,6 @@
+framework module RJNetworking {
+  umbrella header "RJNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module RJLoginMoudle {
+  umbrella header "RJLoginMoudle-umbrella.h"
+
+  export *
+  module * { export * }
+}

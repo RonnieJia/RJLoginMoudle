@@ -1,0 +1,6 @@
+framework module RJBaseKit {
+  umbrella header "RJBaseKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

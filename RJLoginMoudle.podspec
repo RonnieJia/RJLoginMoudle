@@ -6,9 +6,10 @@
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
 
+
 Pod::Spec.new do |s|
   s.name             = 'RJLoginMoudle'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of RJLoginMoudle.'
 
 # This description is used to generate tags and improve search results.
@@ -21,14 +22,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Ronniejia/RJLoginMoudle'
+  s.homepage         = 'https://github.com/RonnieJia/RJLoginMoudle'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ronniejia' => '657529876@qq.com' }
-  s.source           = { :git => 'https://github.com/Ronniejia/RJLoginMoudle.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/RonnieJia/RJLoginMoudle.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'RJLoginMoudle/Classes/**/*'
   
@@ -36,7 +37,17 @@ TODO: Add long description of the pod here.
   #   'RJLoginMoudle' => ['RJLoginMoudle/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.prefix_header_contents = <<-EOS
+    #import <RJUtils/RJUIViewManager.h>
+    #import <RJCategoryKit/UIView+Frame.h>
+  EOS
+  
+#   s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RJNetworking'
+  s.dependency 'RJUtils', '~> 0.1.1'
+  s.dependency 'RJBaseKit', '~> 0.1.5'
+  s.dependency 'RJCategoryKit'
+  s.dependency 'CTMediator'
 end

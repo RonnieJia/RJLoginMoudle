@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A4464A2F3DC5758CD99977D /* Pods_RJLoginMoudle_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB69C460AA3A5728A1C955E3 /* Pods_RJLoginMoudle_Example.framework */; };
+		085B20F923C7018B0029E350 /* RJ2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085B20F823C7018B0029E350 /* RJ2ViewController.m */; };
+		3F85E7CCA9254E53C8573118 /* libPods-RJLoginMoudle_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6092452B55DA9FBCC1AB4988 /* libPods-RJLoginMoudle_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* RJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* RJAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* RJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* RJViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -22,8 +22,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		789BAEAD71FB7E2848BCCF7C /* Pods_RJLoginMoudle_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD1683E6D6726881E985E84 /* Pods_RJLoginMoudle_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		FC8371BCC28E0FF9FF4FEEB0 /* libPods-RJLoginMoudle_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A38680DCDAD59BFF083A52 /* libPods-RJLoginMoudle_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BD1683E6D6726881E985E84 /* Pods_RJLoginMoudle_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJLoginMoudle_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E89B8BD77F22BB6EF88A1C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		085B20F723C7018B0029E350 /* RJ2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJ2ViewController.h; sourceTree = "<group>"; };
+		085B20F823C7018B0029E350 /* RJ2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJ2ViewController.m; sourceTree = "<group>"; };
+		0E89B8BD77F22BB6EF88A1C3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		221FB313FEC90C9174A8A953 /* Pods-RJLoginMoudle_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJLoginMoudle_Tests.release.xcconfig"; path = "Target Support Files/Pods-RJLoginMoudle_Tests/Pods-RJLoginMoudle_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* RJLoginMoudle_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJLoginMoudle_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,8 +51,6 @@
 		6003F59B195388D20070C39A /* RJLoginMoudle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RJLoginMoudle-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* RJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* RJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* RJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* RJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* RJLoginMoudle_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RJLoginMoudle_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,13 +58,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6092452B55DA9FBCC1AB4988 /* libPods-RJLoginMoudle_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RJLoginMoudle_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62A38680DCDAD59BFF083A52 /* libPods-RJLoginMoudle_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RJLoginMoudle_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		804F34865185EF0543D190B8 /* Pods-RJLoginMoudle_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJLoginMoudle_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RJLoginMoudle_Tests/Pods-RJLoginMoudle_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DAFAFB90CA44C19FC9C114B /* Pods-RJLoginMoudle_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJLoginMoudle_Example.release.xcconfig"; path = "Target Support Files/Pods-RJLoginMoudle_Example/Pods-RJLoginMoudle_Example.release.xcconfig"; sourceTree = "<group>"; };
-		996A75B4B3916C16C164F7E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C8A9FB2A0064E4196BEF60AA /* RJLoginMoudle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RJLoginMoudle.podspec; path = ../RJLoginMoudle.podspec; sourceTree = "<group>"; };
-		DB69C460AA3A5728A1C955E3 /* Pods_RJLoginMoudle_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJLoginMoudle_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		996A75B4B3916C16C164F7E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C8A9FB2A0064E4196BEF60AA /* RJLoginMoudle.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RJLoginMoudle.podspec; path = ../RJLoginMoudle.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F93408330F41D4FCA5EEEDE8 /* Pods-RJLoginMoudle_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJLoginMoudle_Example.debug.xcconfig"; path = "Target Support Files/Pods-RJLoginMoudle_Example/Pods-RJLoginMoudle_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				2A4464A2F3DC5758CD99977D /* Pods_RJLoginMoudle_Example.framework in Frameworks */,
+				3F85E7CCA9254E53C8573118 /* libPods-RJLoginMoudle_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				789BAEAD71FB7E2848BCCF7C /* Pods_RJLoginMoudle_Tests.framework in Frameworks */,
+				FC8371BCC28E0FF9FF4FEEB0 /* libPods-RJLoginMoudle_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,6 @@
 				804F34865185EF0543D190B8 /* Pods-RJLoginMoudle_Tests.debug.xcconfig */,
 				221FB313FEC90C9174A8A953 /* Pods-RJLoginMoudle_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,8 +134,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				DB69C460AA3A5728A1C955E3 /* Pods_RJLoginMoudle_Example.framework */,
-				0BD1683E6D6726881E985E84 /* Pods_RJLoginMoudle_Tests.framework */,
+				6092452B55DA9FBCC1AB4988 /* libPods-RJLoginMoudle_Example.a */,
+				62A38680DCDAD59BFF083A52 /* libPods-RJLoginMoudle_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,8 +146,8 @@
 				6003F59C195388D20070C39A /* RJAppDelegate.h */,
 				6003F59D195388D20070C39A /* RJAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* RJViewController.h */,
-				6003F5A6195388D20070C39A /* RJViewController.m */,
+				085B20F723C7018B0029E350 /* RJ2ViewController.h */,
+				085B20F823C7018B0029E350 /* RJ2ViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				ED11996C95146967081669BA /* [CP] Embed Pods Frameworks */,
+				3FF49D077E3F1FEB4BB687B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,6 +295,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3FF49D077E3F1FEB4BB687B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RJLoginMoudle_Example/Pods-RJLoginMoudle_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RJBaseKit/RJBaseKit.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RJBaseKit.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RJLoginMoudle_Example/Pods-RJLoginMoudle_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		87152E54D8293D9B497CE9A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,24 +357,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED11996C95146967081669BA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RJLoginMoudle_Example/Pods-RJLoginMoudle_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RJLoginMoudle/RJLoginMoudle.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RJLoginMoudle.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RJLoginMoudle_Example/Pods-RJLoginMoudle_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -365,8 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* RJAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* RJViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				085B20F923C7018B0029E350 /* RJ2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

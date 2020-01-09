@@ -1,0 +1,40 @@
+{
+  "name": "RJLoginMoudle",
+  "version": "0.1.2",
+  "summary": "A short description of RJLoginMoudle.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/RonnieJia/RJLoginMoudle",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ronniejia": "657529876@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/RonnieJia/RJLoginMoudle.git",
+    "tag": "0.1.2"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "RJLoginMoudle/Classes/**/*",
+  "prefix_header_contents": "#import <RJUtils/RJUIViewManager.h>\n#import <RJCategoryKit/UIView+Frame.h>",
+  "dependencies": {
+    "RJNetworking": [
+
+    ],
+    "RJUtils": [
+      "~> 0.1.1"
+    ],
+    "RJBaseKit": [
+      "~> 0.1.5"
+    ],
+    "RJCategoryKit": [
+
+    ],
+    "CTMediator": [
+
+    ]
+  }
+}
