@@ -3,7 +3,12 @@
 #ifndef RJHTTPUrl_h
 #define RJHTTPUrl_h
 
-#define kBASEURL @""
+#define kDomain @"https://app.kjlsc.com/"
+#define kBaseUrl [NSString stringWithFormat:@"%@back.php/api/",kDomain]
+
+
+
+
 
 
 #if DEBUG

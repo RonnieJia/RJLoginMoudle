@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RJ2ViewController : UIViewController
+@property (nonatomic, assign) NSInteger count;
 
 @end
 

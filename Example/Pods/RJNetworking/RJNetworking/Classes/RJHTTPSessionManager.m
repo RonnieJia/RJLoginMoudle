@@ -9,7 +9,8 @@
     static RJHTTPSessionManager *_sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedInstance = [[self alloc] initWithBaseURL:[NSURL URLWithString:kBASEURL]];
+        _sharedInstance = [[self alloc] initWithBaseURL:[NSURL URLWithString:kBaseUrl]];
+        _sharedInstance.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
     });
     return _sharedInstance;
 }
@@ -17,7 +18,7 @@
 
 - (NSURLSessionDataTask *)getPath:(NSString *)path paramters:(NSDictionary *)paramters completion:(RJHTTPCompletion)completion {
     self.requestSerializer.timeoutInterval = 30.0f;
-    return [self GET:[NSString stringWithFormat:@"Api.%@",path] parameters:paramters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    return [self GET:path parameters:paramters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         RJHTTPLog(@"\n ************************-START \n PATH:[%@]\n PARAMTERS:%@\n RESULT:%@ \n ---------------------------END",path,paramters,responseObject);
         if (completion) {
             completion([RJHTTPResponse response:responseObject]);
@@ -32,7 +33,7 @@
 
 - (NSURLSessionDataTask *)postPath:(NSString *)path paramters:(NSDictionary *)paramters completion:(RJHTTPCompletion)completion {
     self.requestSerializer.timeoutInterval = 30.0f;
-    return [self POST:[NSString stringWithFormat:@"Api.%@",path] parameters:paramters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    return [self POST:path parameters:paramters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         RJHTTPLog(@"\n **************************** \n PATH:[%@]\n PARAMTERS:%@\n RESULT:%@ \n ---------------------------END",path,paramters,responseObject);
         if (completion) {
             completion([RJHTTPResponse response:responseObject]);

@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RJLoginMoudle'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'A short description of RJLoginMoudle.'
 
 # This description is used to generate tags and improve search results.
@@ -33,9 +33,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'RJLoginMoudle/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'RJLoginMoudle' => ['RJLoginMoudle/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'RJLoginMoudle' => ['RJLoginMoudle/Assets/*.png']
+   }
 
   s.prefix_header_contents = <<-EOS
     #import <RJUtils/RJUIViewManager.h>
@@ -45,9 +45,10 @@ TODO: Add long description of the pod here.
 #   s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'RJNetworking'
+  s.dependency 'RJNetworking', '~> 0.1.3'
   s.dependency 'RJUtils', '~> 0.1.1'
   s.dependency 'RJBaseKit', '~> 0.1.5'
   s.dependency 'RJCategoryKit'
   s.dependency 'CTMediator'
+  s.dependency 'Masonry'
 end

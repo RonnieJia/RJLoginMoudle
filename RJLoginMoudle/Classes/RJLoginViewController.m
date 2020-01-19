@@ -7,9 +7,11 @@
 
 #import "RJLoginViewController.h"
 #import "RJRegisViewController.h"
+#import "RJLossPWDViewController.h"
 
 @interface RJLoginViewController ()
-
+@property(nonatomic, weak)UITextField *nameTF;
+@property(nonatomic, weak)UITextField *pwdTF;
 @end
 
 @implementation RJLoginViewController
@@ -68,6 +70,7 @@
     userName.placeholder = @"请输入用户名";
     userName.clearButtonMode = UITextFieldViewModeWhileEditing;
     [self.view addSubview:userName];
+    self.nameTF = userName;
     
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(10, userName.bottom, self.view.width-20, 0.8)];
     line.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1];
@@ -80,6 +83,7 @@
     pwdName.placeholder = @"请输入密码";
     pwdName.clearButtonMode = UITextFieldViewModeWhileEditing;
     [self.view addSubview:pwdName];
+    self.pwdTF = pwdName;
     
     UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(10, pwdName.bottom, self.view.width-20, 0.8)];
     line2.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1];
@@ -110,10 +114,19 @@
     [lossPwdBtn setTitleColor:[UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:1] forState:UIControlStateNormal];
     lossPwdBtn.contentHorizontalAlignment = 2;
     [self.view addSubview:lossPwdBtn];
+    [lossPwdBtn addTarget:self action:@selector(pushToLossPWDViewController) forControlEvents:UIControlEventTouchUpInside];
 }
-
+- (void)pushToLossPWDViewController {
+    RJLossPWDViewController *loss = [[RJLossPWDViewController alloc] init];
+    [self.navigationController pushViewController:loss animated:YES];
+}
 - (void)pushToRegisViewController {
     RJRegisViewController *regis = [[RJRegisViewController alloc] init];
+    __weak typeof(self)weakSelf = self;
+    regis.regisSuccess = ^(NSString * _Nonnull phone, NSString * _Nonnull pwd) {
+        weakSelf.nameTF.text = phone;
+        weakSelf.pwdTF.text = pwd;
+    };
     regis.showType = self.showType;
     [self.navigationController pushViewController:regis animated:YES];
 }
